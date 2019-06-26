@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Birthday = new Date(1993,3,1);
+    let date = new Date();
+    let Age = date.getFullYear()- Birthday.getFullYear();
+    let Month = Age*12 + date.getMonth()-Birthday.getMonth();
+    let Day = Month*30 +date.getDay()-Birthday.getDay();
+    let Hour = Day*24;
+    let Minute = Hour*60;
+    let Second = Minute*60;
+    alert("Tôi đã sống được " + Age+" năm");
+    alert("Tôi đã sống được " + Month+" tháng");
+    alert("Tôi đã sống được " + Day+" ngày");
+    alert("Tôi đã sống được " + Hour+" giờ");
+    alert("Tôi đã sống được " + Minute+" phút");
+    alert("Tôi đã sống được " + Second+" giây");
+</script>
+
+</body>
+</html>
